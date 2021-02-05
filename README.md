@@ -6,7 +6,7 @@ A lambda function to automatically register the private IP-addresses of an ALB i
 
 Configure a access policy like:
 
-´´´JSON
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -44,7 +44,7 @@ Configure a access policy like:
         }
     ]
 }
-´´´
+```
 and assign it to the execution role of the lambda
 
 Configure these environment variables in your Lambda environment
