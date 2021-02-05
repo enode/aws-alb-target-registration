@@ -5,8 +5,8 @@ import boto3
 
 '''
 Configure these environment variables in your Lambda environment (CloudFormation Inputs)
-1. ALB_NAME - The full DNS name of the internal Application Load Balancer
-2. ALB_LISTENER - The traffic listener port of the internal Application Load Balancer
+1. ALB_NAME - The name of the Application Load Balancer (format app//)
+2. ALB_LISTENER - The traffic listener port of the Application Load Balancer
 3. NLB_TG_ARN - The ARN of the Network Load Balancer's target group
 4. CW_METRIC_FLAG_IP_COUNT - The controller flag that enables CloudWatch metric of IP count
 '''
