@@ -47,6 +47,10 @@ Configure a access policy like:
 ```
 and assign it to the execution role of the lambda
 
+Add a CloudWatch Events trigger to the lambda using the pattern `rate(1 minute)`
+
+set the handler to be `populate_NLB_TG_with_ALB.lambda_handler`
+
 Configure these environment variables in your Lambda environment
 1. ALB_NAME - The name of the Application Load Balancer (format app/<name>/<id>)
 2. ALB_LISTENER - The traffic listener port of the Application Load Balancer
